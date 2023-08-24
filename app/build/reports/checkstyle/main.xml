@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.38">
+<file name="C:\Users\ghiya\Desktop\retake\a2\app\src\main\java\controller\Controller.java">
+</file>
+<file name="C:\Users\ghiya\Desktop\retake\a2\app\src\main\java\controller\MainMenu.java">
+</file>
+<file name="C:\Users\ghiya\Desktop\retake\a2\app\src\main\java\controller\Run.java">
+</file>
+<file name="C:\Users\ghiya\Desktop\retake\a2\app\src\main\java\model\domain\Moon.java">
+</file>
+<file name="C:\Users\ghiya\Desktop\retake\a2\app\src\main\java\model\domain\Planet.java">
+</file>
+<file name="C:\Users\ghiya\Desktop\retake\a2\app\src\main\java\model\domain\SolarManager.java">
+</file>
+<file name="C:\Users\ghiya\Desktop\retake\a2\app\src\main\java\model\domain\SolarSystem.java">
+</file>
+<file name="C:\Users\ghiya\Desktop\retake\a2\app\src\main\java\model\domain\Star.java">
+</file>
+<file name="C:\Users\ghiya\Desktop\retake\a2\app\src\main\java\model\domain\Validator.java">
+</file>
+<file name="C:\Users\ghiya\Desktop\retake\a2\app\src\main\java\view\Console.java">
+</file>
+</checkstyle>

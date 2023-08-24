@@ -1,0 +1,47 @@
+f0 CheckStyle Issues in C:/Users/ghiya/Desktop/retake/a2/app/src/main/java/controller/Controller.java
+d0 CheckStyle Issues in C:/Users/ghiya/Desktop/retake/a2/app/src/main/java/controller/MainMenu.java
+_0 CheckStyle Issues in C:/Users/ghiya/Desktop/retake/a2/app/src/main/java/controller/Run.java
+b0 CheckStyle Issues in C:/Users/ghiya/Desktop/retake/a2/app/src/main/java/model/domain/Moon.java
+d0 CheckStyle Issues in C:/Users/ghiya/Desktop/retake/a2/app/src/main/java/model/domain/Planet.java
+j0 CheckStyle Issues in C:/Users/ghiya/Desktop/retake/a2/app/src/main/java/model/domain/SolarManager.java
+i0 CheckStyle Issues in C:/Users/ghiya/Desktop/retake/a2/app/src/main/java/model/domain/SolarSystem.java
+b0 CheckStyle Issues in C:/Users/ghiya/Desktop/retake/a2/app/src/main/java/model/domain/Star.java
+g0 CheckStyle Issues in C:/Users/ghiya/Desktop/retake/a2/app/src/main/java/model/domain/Validator.java
+]0 CheckStyle Issues in C:/Users/ghiya/Desktop/retake/a2/app/src/main/java/view/Console.java
+(0 FindBugs Issues in view/Console.java
+*0 FindBugs Issues in controller/Run.java
+-0 FindBugs Issues in model/domain/Moon.java
+/0 FindBugs Issues in model/domain/Planet.java
+20 FindBugs Issues in model/domain/Validator.java
+/0 FindBugs Issues in controller/MainMenu.java
+10 FindBugs Issues in controller/Controller.java
+50 FindBugs Issues in model/domain/SolarManager.java
+-1 FindBugs Issues in model/domain/Star.java
+text:lines: 17-61 
+LgetPlanets() may expose internal representation by returning Star.planets 
+NMay expose internal representation by returning reference to mutable object 
+cReturning a reference to a mutable object value stored in one of the object's fields exposes the 
+f  internal representation of the object. If instances are accessed by untrusted code, and unchecked 
+d  changes to the mutable object would compromise security or other important properties, you will 
+b  need to do something different. Returning a new copy of the object is better approach in many 
+  situations.
+
+42 FindBugs Issues in model/domain/SolarSystem.java
+text:lines: 19-155 
+KgetSun() may expose internal representation by returning SolarSystem.sun 
+NMay expose internal representation by returning reference to mutable object 
+cReturning a reference to a mutable object value stored in one of the object's fields exposes the 
+f  internal representation of the object. If instances are accessed by untrusted code, and unchecked 
+d  changes to the mutable object would compromise security or other important properties, you will 
+b  need to do something different. Returning a new copy of the object is better approach in many 
+  situations.
+
+text:lines: 19-155 
+^new model.domain.SolarSystem(String, Star) may expose internal representation by storing an 
+3  externally mutable object into SolarSystem.sun 
+RMay expose internal representation by incorporating reference to mutable object 
+gThis code stores a reference to an externally mutable object into the internal representation of the 
+e  object. If instances are accessed by untrusted code, and unchecked changes to the mutable object 
+f  would compromise security or other important properties, you will need to do something different. 
+G  Storing a copy of the object is better approach in many situations.
+

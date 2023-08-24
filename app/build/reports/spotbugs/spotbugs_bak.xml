@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.1" sequence="0" timestamp="1690226126429" analysisTimestamp="1690226126461" release="unspecified">
+  <Project projectName="app (spotbugsMain)">
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\controller\Controller.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\controller\MainMenu$1.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\controller\MainMenu.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\controller\Run.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\model\domain\Moon.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\model\domain\Planet.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\model\domain\SolarManager.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\model\domain\SolarSystem$1.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\model\domain\SolarSystem$2.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\model\domain\SolarSystem.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\model\domain\Star.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\model\domain\Validator.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\view\Console$MoonMenu.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\view\Console$PlanetMenu.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\view\Console$SolarMenu.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\view\Console$StartMenu.class</Jar>
+    <Jar>C:\Users\ghiya\Desktop\retake\a2\app\build\classes\java\main\view\Console.class</Jar>
+    <Jar>ss</Jar>
+    <AuxClasspathEntry>C:\Users\ghiya\.gradle\caches\modules-2\files-2.1\com.github.spotbugs\spotbugs-annotations\4.7.2\3546c0a24a083e7fdfdf5986bef76b19c477a264\spotbugs-annotations-4.7.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\ghiya\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\30.1.1-jre\87e0fd1df874ea3cbe577702fe6f17068b790fd8\guava-30.1.1-jre.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\ghiya\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\ghiya\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.1\1dcf1de382a0bf95a3d8b0849546c88bac1292c9\failureaccess-1.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\ghiya\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\ghiya\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.8.0\6b83e4a33220272c3a08991498ba9dc09519f190\checker-qual-3.8.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\ghiya\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.5.1\562d366678b89ce5d6b6b82c1a073880341e3fba\error_prone_annotations-2.5.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\ghiya\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.3\ba035118bc8bac37d7eff77700720999acd9986d\j2objc-annotations-1.3.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\ghiya\Desktop\retake\a2\app\src\main\resources</SrcDir>
+    <SrcDir>C:\Users\ghiya\Desktop\retake\a2\app\src\main\java</SrcDir>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="9245884ec05aa6dc52a1d3cc438abbd2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>model.domain.SolarSystem.getSun() may expose internal representation by returning SolarSystem.sun</LongMessage>
+    <Class classname="model.domain.SolarSystem" primary="true">
+      <SourceLine classname="model.domain.SolarSystem" start="19" end="155" sourcefile="SolarSystem.java" sourcepath="model/domain/SolarSystem.java" relSourcepath="java\model\domain\SolarSystem.java">
+        <Message>At SolarSystem.java:[lines 19-155]</Message>
+      </SourceLine>
+      <Message>In class model.domain.SolarSystem</Message>
+    </Class>
+    <Method classname="model.domain.SolarSystem" name="getSun" signature="()Lmodel/domain/Star;" isStatic="false" primary="true">
+      <SourceLine classname="model.domain.SolarSystem" start="47" end="47" startBytecode="0" endBytecode="46" sourcefile="SolarSystem.java" sourcepath="model/domain/SolarSystem.java" relSourcepath="java\model\domain\SolarSystem.java"/>
+      <Message>In method model.domain.SolarSystem.getSun()</Message>
+    </Method>
+    <Field classname="model.domain.SolarSystem" name="sun" signature="Lmodel/domain/Star;" isStatic="false" primary="true">
+      <SourceLine classname="model.domain.SolarSystem" sourcefile="SolarSystem.java" sourcepath="model/domain/SolarSystem.java" relSourcepath="java\model\domain\SolarSystem.java">
+        <Message>In SolarSystem.java</Message>
+      </SourceLine>
+      <Message>Field model.domain.SolarSystem.sun</Message>
+    </Field>
+    <SourceLine classname="model.domain.SolarSystem" primary="true" start="47" end="47" startBytecode="4" endBytecode="4" sourcefile="SolarSystem.java" sourcepath="model/domain/SolarSystem.java" relSourcepath="java\model\domain\SolarSystem.java">
+      <Message>At SolarSystem.java:[line 47]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="14930cae18759cf3d8dd1dc4f202da68" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new model.domain.SolarSystem(String, Star) may expose internal representation by storing an externally mutable object into SolarSystem.sun</LongMessage>
+    <Class classname="model.domain.SolarSystem" primary="true">
+      <SourceLine classname="model.domain.SolarSystem" start="19" end="155" sourcefile="SolarSystem.java" sourcepath="model/domain/SolarSystem.java" relSourcepath="java\model\domain\SolarSystem.java">
+        <Message>At SolarSystem.java:[lines 19-155]</Message>
+      </SourceLine>
+      <Message>In class model.domain.SolarSystem</Message>
+    </Class>
+    <Method classname="model.domain.SolarSystem" name="&lt;init&gt;" signature="(Ljava/lang/String;Lmodel/domain/Star;)V" isStatic="false" primary="true">
+      <SourceLine classname="model.domain.SolarSystem" start="19" end="24" startBytecode="0" endBytecode="103" sourcefile="SolarSystem.java" sourcepath="model/domain/SolarSystem.java" relSourcepath="java\model\domain\SolarSystem.java"/>
+      <Message>In method new model.domain.SolarSystem(String, Star)</Message>
+    </Method>
+    <Field classname="model.domain.SolarSystem" name="sun" signature="Lmodel/domain/Star;" isStatic="false" primary="true">
+      <SourceLine classname="model.domain.SolarSystem" sourcefile="SolarSystem.java" sourcepath="model/domain/SolarSystem.java" relSourcepath="java\model\domain\SolarSystem.java">
+        <Message>In SolarSystem.java</Message>
+      </SourceLine>
+      <Message>Field model.domain.SolarSystem.sun</Message>
+    </Field>
+    <LocalVariable name="sun" register="2" pc="22" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named sun</Message>
+    </LocalVariable>
+    <SourceLine classname="model.domain.SolarSystem" primary="true" start="22" end="22" startBytecode="22" endBytecode="22" sourcefile="SolarSystem.java" sourcepath="model/domain/SolarSystem.java" relSourcepath="java\model\domain\SolarSystem.java">
+      <Message>At SolarSystem.java:[line 22]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="ff690ff2baf28ae506d3b36e868ed955" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>model.domain.Star.getPlanets() may expose internal representation by returning Star.planets</LongMessage>
+    <Class classname="model.domain.Star" primary="true">
+      <SourceLine classname="model.domain.Star" start="17" end="61" sourcefile="Star.java" sourcepath="model/domain/Star.java" relSourcepath="java\model\domain\Star.java">
+        <Message>At Star.java:[lines 17-61]</Message>
+      </SourceLine>
+      <Message>In class model.domain.Star</Message>
+    </Class>
+    <Method classname="model.domain.Star" name="getPlanets" signature="()Ljava/util/ArrayList;" isStatic="false" primary="true">
+      <SourceLine classname="model.domain.Star" start="61" end="61" startBytecode="0" endBytecode="46" sourcefile="Star.java" sourcepath="model/domain/Star.java" relSourcepath="java\model\domain\Star.java"/>
+      <Message>In method model.domain.Star.getPlanets()</Message>
+    </Method>
+    <Field classname="model.domain.Star" name="planets" signature="Ljava/util/ArrayList;" isStatic="false" primary="true">
+      <SourceLine classname="model.domain.Star" sourcefile="Star.java" sourcepath="model/domain/Star.java" relSourcepath="java\model\domain\Star.java">
+        <Message>In Star.java</Message>
+      </SourceLine>
+      <Message>Field model.domain.Star.planets</Message>
+    </Field>
+    <SourceLine classname="model.domain.Star" primary="true" start="61" end="61" startBytecode="4" endBytecode="4" sourcefile="Star.java" sourcepath="model/domain/Star.java" relSourcepath="java\model\domain\Star.java">
+      <Message>At Star.java:[line 61]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by returning reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EI">
+    <Description>Method returning array may expose internal representation</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 24 Jul 2023 21:15:26 +0200" total_classes="17" referenced_classes="76" total_bugs="3" total_size="660" num_packages="3" java_version="18.0.1" vm_version="18.0.1+10-24" cpu_seconds="9.05" clock_seconds="2.11" peak_mbytes="211.18" alloc_mbytes="4078.00" gc_seconds="0.02" priority_2="3">
+    <FileStats path="controller/Controller.java" bugCount="0" size="43"/>
+    <FileStats path="controller/MainMenu.java" bugCount="0" size="93"/>
+    <FileStats path="controller/Run.java" bugCount="0" size="11"/>
+    <FileStats path="model/domain/Moon.java" bugCount="0" size="28"/>
+    <FileStats path="model/domain/Planet.java" bugCount="0" size="39"/>
+    <FileStats path="model/domain/SolarManager.java" bugCount="0" size="17"/>
+    <FileStats path="model/domain/SolarSystem.java" bugCount="2" size="80" bugHash="b391c5e3b83c39f09c078580647f0dec"/>
+    <FileStats path="model/domain/Star.java" bugCount="1" size="25" bugHash="8714e8d6e98163704852e5d96febdaac"/>
+    <FileStats path="model/domain/Validator.java" bugCount="0" size="27"/>
+    <FileStats path="view/Console.java" bugCount="0" size="297"/>
+    <PackageStats package="controller" total_bugs="0" total_types="4" total_size="147">
+      <ClassStats class="controller.Controller" sourceFile="Controller.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="controller.MainMenu" sourceFile="MainMenu.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="controller.MainMenu$1" sourceFile="MainMenu.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="controller.Run" sourceFile="Run.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="model.domain" total_bugs="3" total_types="8" total_size="216" priority_2="3">
+      <ClassStats class="model.domain.Moon" sourceFile="Moon.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="model.domain.Planet" sourceFile="Planet.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="model.domain.SolarManager" sourceFile="SolarManager.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="model.domain.SolarSystem" sourceFile="SolarSystem.java" interface="false" size="64" bugs="2" priority_2="2"/>
+      <ClassStats class="model.domain.SolarSystem$1" sourceFile="SolarSystem.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="model.domain.SolarSystem$2" sourceFile="SolarSystem.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="model.domain.Star" sourceFile="Star.java" interface="false" size="25" bugs="1" priority_2="1"/>
+      <ClassStats class="model.domain.Validator" sourceFile="Validator.java" interface="false" size="27" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="view" total_bugs="0" total_types="5" total_size="297">
+      <ClassStats class="view.Console" sourceFile="Console.java" interface="false" size="215" bugs="0"/>
+      <ClassStats class="view.Console$MoonMenu" sourceFile="Console.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="view.Console$PlanetMenu" sourceFile="Console.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="view.Console$SolarMenu" sourceFile="Console.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="view.Console$StartMenu" sourceFile="Console.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="342" invocations="634" avgMicrosecondsPerInvocation="539" maxMicrosecondsPerInvocation="13453" standardDeviationMicrosecondsPerInvocation="1149"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="87" invocations="76" avgMicrosecondsPerInvocation="1145" maxMicrosecondsPerInvocation="12990" standardDeviationMicrosecondsPerInvocation="2415"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="68" invocations="639" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="3541" standardDeviationMicrosecondsPerInvocation="185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="63" invocations="76" avgMicrosecondsPerInvocation="834" maxMicrosecondsPerInvocation="10137" standardDeviationMicrosecondsPerInvocation="1559"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="51" invocations="292" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="2600" standardDeviationMicrosecondsPerInvocation="303"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="47" invocations="116" avgMicrosecondsPerInvocation="409" maxMicrosecondsPerInvocation="32845" standardDeviationMicrosecondsPerInvocation="3040"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="46" invocations="117" avgMicrosecondsPerInvocation="397" maxMicrosecondsPerInvocation="7417" standardDeviationMicrosecondsPerInvocation="898"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="45" invocations="116" avgMicrosecondsPerInvocation="395" maxMicrosecondsPerInvocation="5873" standardDeviationMicrosecondsPerInvocation="689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="40" invocations="116" avgMicrosecondsPerInvocation="348" maxMicrosecondsPerInvocation="6174" standardDeviationMicrosecondsPerInvocation="750"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="38" invocations="114" avgMicrosecondsPerInvocation="336" maxMicrosecondsPerInvocation="3750" standardDeviationMicrosecondsPerInvocation="492"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="36" invocations="114" avgMicrosecondsPerInvocation="321" maxMicrosecondsPerInvocation="15405" standardDeviationMicrosecondsPerInvocation="1500"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="36" invocations="116" avgMicrosecondsPerInvocation="311" maxMicrosecondsPerInvocation="8957" standardDeviationMicrosecondsPerInvocation="876"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="35" invocations="116" avgMicrosecondsPerInvocation="307" maxMicrosecondsPerInvocation="2583" standardDeviationMicrosecondsPerInvocation="441"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="33" invocations="76" avgMicrosecondsPerInvocation="445" maxMicrosecondsPerInvocation="5394" standardDeviationMicrosecondsPerInvocation="884"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="33" invocations="591" avgMicrosecondsPerInvocation="55" maxMicrosecondsPerInvocation="1418" standardDeviationMicrosecondsPerInvocation="115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="27" invocations="76" avgMicrosecondsPerInvocation="359" maxMicrosecondsPerInvocation="18860" standardDeviationMicrosecondsPerInvocation="2150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="22" invocations="76" avgMicrosecondsPerInvocation="298" maxMicrosecondsPerInvocation="2399" standardDeviationMicrosecondsPerInvocation="521"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="21" invocations="76" avgMicrosecondsPerInvocation="287" maxMicrosecondsPerInvocation="8854" standardDeviationMicrosecondsPerInvocation="1062"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="20" invocations="93" avgMicrosecondsPerInvocation="216" maxMicrosecondsPerInvocation="2089" standardDeviationMicrosecondsPerInvocation="284"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="20" invocations="76" avgMicrosecondsPerInvocation="264" maxMicrosecondsPerInvocation="3279" standardDeviationMicrosecondsPerInvocation="506"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="18" invocations="8" avgMicrosecondsPerInvocation="2314" maxMicrosecondsPerInvocation="2944" standardDeviationMicrosecondsPerInvocation="812"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="17" invocations="76" avgMicrosecondsPerInvocation="233" maxMicrosecondsPerInvocation="2035" standardDeviationMicrosecondsPerInvocation="380"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="15" invocations="76" avgMicrosecondsPerInvocation="208" maxMicrosecondsPerInvocation="2265" standardDeviationMicrosecondsPerInvocation="426"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="14" invocations="17" avgMicrosecondsPerInvocation="874" maxMicrosecondsPerInvocation="12253" standardDeviationMicrosecondsPerInvocation="2846"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="13" invocations="76" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="2582" standardDeviationMicrosecondsPerInvocation="407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="13" invocations="17" avgMicrosecondsPerInvocation="810" maxMicrosecondsPerInvocation="7488" standardDeviationMicrosecondsPerInvocation="1749"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
